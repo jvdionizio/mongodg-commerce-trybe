@@ -5,5 +5,4 @@ db.produtos.updateMany(
   ] },
   { $addToSet: { ingredientes: "ketchup" } },
 );
-//retorna o nome e ingredientes
 db.produtos.find({}, { _id: 0, nome: 1, ingredientes: 1 });
